@@ -4,9 +4,9 @@
   <!-- PHASE 1: TERMINAL BANNER (<picture> THEMED) -->
   <!-- ========================================== -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/light.svg">
-    <img alt="Uvaram Mohanaram - AI / ML & Software Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/light.svg?v=2">
+    <img alt="Uvaram Mohanaram - AI / ML & Software Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg?v=2" width="100%">
   </picture>
 
   <br/><br/>

@@ -15,71 +15,46 @@ Palette:
 
 import os
 import math
+import html
 import numpy as np
 from PIL import Image, ImageOps, ImageFilter, ImageDraw
+import xml.etree.ElementTree as ET
 
-def create_sample_avatar(width=300, height=340):
+def create_sample_avatar(width=280, height=340):
     """
-    Creates an artistic high-tech head-and-shoulders AI portrait silhouette
-    if no external user photo (e.g. photo.jpg / portrait.png) is supplied.
+    Fallback artistic high-tech head-and-shoulders silhouette
+    if no external user photo is found.
     """
     img = Image.new("L", (width, height), color=0)
     draw = ImageDraw.Draw(img)
 
     cx, cy = width // 2, 130
-    # Head & face
     draw.ellipse([cx - 58, cy - 75, cx + 58, cy + 65], fill=195)
-    # Jaw / chin
     draw.polygon([(cx - 45, cy + 30), (cx + 45, cy + 30), (cx, cy + 85)], fill=180)
-    # Neck
     draw.rectangle([cx - 28, cy + 65, cx + 28, cy + 130], fill=150)
-    # Shoulders
     draw.ellipse([cx - 135, cy + 115, cx + 135, cy + 310], fill=135)
-
-    # Stylized hair & facial contour
     draw.ellipse([cx - 62, cy - 88, cx + 62, cy - 10], fill=80)
-    # Eyes & brow
     draw.rectangle([cx - 38, cy - 15, cx - 12, cy - 8], fill=40)
     draw.rectangle([cx + 12, cy - 15, cx + 38, cy - 8], fill=40)
-    # Nose shadow
     draw.line([(cx, cy - 5), (cx - 4, cy + 22), (cx + 4, cy + 22)], fill=90, width=2)
-    # Lip
     draw.line([(cx - 18, cy + 42), (cx + 18, cy + 42)], fill=60, width=3)
-
-    # Neural network constellation overlay on the subject
-    np.random.seed(42)
-    for _ in range(35):
-        px = int(cx + np.random.normal(0, 48))
-        py = int(cy + np.random.normal(20, 65))
-        if 0 <= px < width and 0 <= py < height:
-            val = img.getpixel((px, py))
-            if val > 60:
-                draw.ellipse([px-3, py-3, px+3, py+3], fill=min(255, val + 70))
-                # connect nearby
-                for _ in range(2):
-                    qx = px + np.random.randint(-22, 22)
-                    qy = py + np.random.randint(-22, 22)
-                    if 0 <= qx < width and 0 <= qy < height and img.getpixel((qx, qy)) > 60:
-                        draw.line([(px, py), (qx, qy)], fill=min(255, val + 40), width=1)
-
     return img
 
-def process_portrait(image_path=None, grid_w=300, grid_h=340, dark_mode=True):
+def process_portrait(image_path=None, grid_w=280, grid_h=340, dark_mode=True):
     """
     Implements Floyd-Steinberg dithering in serpentine order
     with contrast, autocontrast and unsharp mask per Master Prompt spec:
-    - 300x340 grid
+    - 280x340 grid
     - Contrast 1.3x only, autocontrast(cutoff=1), UnsharpMask(radius=3, percent=140)
     - 1-bit Floyd-Steinberg dither, serpentine order
     - Runs of dots as <path> with crispEdges
     """
     if image_path and os.path.exists(image_path):
-        img = Image.open(image_path).convert("L")
+        raw_img = Image.open(image_path).convert("L")
+        # Crop head-and-shoulders preserving aspect ratio
+        img = ImageOps.fit(raw_img, (grid_w, grid_h), centering=(0.5, 0.35))
     else:
         img = create_sample_avatar(grid_w, grid_h)
-
-    # Resize to 300x340 preserving head & shoulders framing
-    img = img.resize((grid_w, grid_h), Image.Resampling.LANCZOS)
 
     # Autocontrast(cutoff=1)
     img = ImageOps.autocontrast(img, cutoff=1)
@@ -91,7 +66,7 @@ def process_portrait(image_path=None, grid_w=300, grid_h=340, dark_mode=True):
 
     arr = np.array(img, dtype=float)
 
-    # In dark mode, lit pixels are drawn on dark panel
+    # In dark mode: lit pixels drawn on dark panel
     if not dark_mode:
         arr = 255.0 - arr
 
@@ -129,7 +104,7 @@ def process_portrait(image_path=None, grid_w=300, grid_h=340, dark_mode=True):
 
     return output_bits
 
-def bits_to_svg_paths(bits, origin_x=60, origin_y=110, scale_x=1.24, scale_y=1.24):
+def bits_to_svg_paths(bits, origin_x=65, origin_y=118, scale_x=1.32, scale_y=1.28):
     """
     Compresses consecutive horizontal dot runs into efficient SVG <path> d strings
     with crispEdges rendering to avoid font-glyph mushing.
@@ -172,9 +147,9 @@ def generate_banner(output_path, dark_mode=True, photo_path=None):
 
     # Dithered portrait
     bits = process_portrait(photo_path, grid_w=280, grid_h=340, dark_mode=dark_mode)
-    path_d = bits_to_svg_paths(bits, origin_x=70, origin_y=140, scale_x=1.28, scale_y=1.22)
+    path_d = bits_to_svg_paths(bits, origin_x=65, origin_y=118, scale_x=1.32, scale_y=1.28)
 
-    # Real info panel rows from Uvaram Mohanaram's CV
+    # Info panel rows from CV
     info_rows = [
         ("Subject", "Uvaram Mohanaram"),
         ("Role", "AI / ML & Software Engineer"),
@@ -242,56 +217,57 @@ def generate_banner(output_path, dark_mode=True, photo_path=None):
         f'  <text x="1115" y="87" text-anchor="end" fill="{label_color}" class="mono" font-size="11">SYS_STATUS: ONLINE</text>',
     ]
 
-    # Render info rows with computed dotted leaders and textLength lock
+    # Render info rows with computed dotted leaders and XML-escaped content
     start_y = 130
     spacing = 26
     label_x = 498
-    right_x = 1115
-    fixed_width = right_x - label_x  # 617px total width
 
     for i, (label, val) in enumerate(info_rows):
         cur_y = start_y + i * spacing
-        # Estimate string lengths to build dotted leader line
-        label_len = len(label)
-        val_len = len(val)
-        dots_count = max(3, 72 - (label_len + val_len))
+        dots_count = max(3, 72 - (len(label) + len(val)))
         dots_str = " " + ("." * dots_count) + " "
+
+        esc_label = html.escape(label)
+        esc_val = html.escape(val)
 
         svg_lines.append(
             f'  <g class="mono" font-size="13">'
-            f'<text x="{label_x}" y="{cur_y}" fill="{label_color}">{label}'
+            f'<text x="{label_x}" y="{cur_y}" fill="{label_color}">{esc_label}'
             f'<tspan fill="{leader_color}">{dots_str}</tspan>'
-            f'<tspan fill="{value_color}" font-weight="600">{val}</tspan>'
+            f'<tspan fill="{value_color}" font-weight="600">{esc_val}</tspan>'
             f'</text>'
             f'</g>'
         )
 
     # Footer status line
     svg_lines.append(f'  <line x1="475" y1="545" x2="1135" y2="545" stroke="{term_border}" stroke-width="1" />')
-    svg_lines.append(f'  <text x="498" y="565" fill="{accent_color}" class="mono" font-size="12">▶ model.eval() --precision bfloat16 --inference-ready</text>')
+    svg_lines.append(f'  <text x="498" y="565" fill="{accent_color}" class="mono" font-size="12">&#9654; model.eval() --precision bfloat16 --inference-ready</text>')
     svg_lines.append(f'  <text x="1115" y="565" text-anchor="end" fill="{label_color}" class="mono" font-size="11">UTC: 2026.10</text>')
 
     svg_lines.append('</svg>')
 
+    full_svg = "\n".join(svg_lines)
+
+    # Validate XML before writing
+    try:
+        ET.fromstring(full_svg)
+    except ET.ParseError as err:
+        raise ValueError(f"Generated SVG has XML parse error: {err}")
+
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(svg_lines))
+        f.write(full_svg)
 
 if __name__ == "__main__":
     work_dir = os.path.dirname(os.path.abspath(__file__))
     dark_path = os.path.join(work_dir, "dark.svg")
     light_path = os.path.join(work_dir, "light.svg")
 
-    # Check if a user photo is present in the folder
-    photo_candidates = ["photo.jpg", "photo.png", "portrait.jpg", "portrait.png", "avatar.jpg", "avatar.png"]
-    user_photo = None
-    for cand in photo_candidates:
-        full_cand = os.path.join(work_dir, cand)
-        if os.path.exists(full_cand):
-            user_photo = full_cand
-            break
+    photo_path = os.path.join(work_dir, "photo.jpg")
+    if not os.path.exists(photo_path):
+        photo_path = None
 
-    print(f"Generating dark.svg with user photo: {user_photo}")
-    generate_banner(dark_path, dark_mode=True, photo_path=user_photo)
-    print(f"Generating light.svg with user photo: {user_photo}")
-    generate_banner(light_path, dark_mode=False, photo_path=user_photo)
-    print("Done generating banners!")
+    print(f"Generating dark.svg with user photo: {photo_path}")
+    generate_banner(dark_path, dark_mode=True, photo_path=photo_path)
+    print(f"Generating light.svg with user photo: {photo_path}")
+    generate_banner(light_path, dark_mode=False, photo_path=photo_path)
+    print("All banners generated and XML validated successfully!")
