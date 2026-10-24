@@ -1,40 +1,42 @@
 <div align="center">
 
-  <!-- Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=Hi%20there,%20I'm%20Mohan%20👋&fontSize=42&fontAlignY=38&animation=twinkling&desc=AI%20%2F%20Machine%20Learning%20%26%20Data%20Science%20Engineer&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
+  <!-- ========================================== -->
+  <!-- PHASE 1: TERMINAL BANNER (<picture> THEMED) -->
+  <!-- ========================================== -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/light.svg">
+    <img alt="Mohan - AI & ML Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg" width="100%">
+  </picture>
 
-  <!-- Animated Typing Subtitle -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=AI+%26+Machine+Learning+Engineer+🧠;Building+Intelligent+LLM+Agents+🚀;Deep+Learning+%26+Computer+Vision+👁️;End-to-End+MLOps+%26+Data+Pipelines+⚙️;Transforming+Data+into+Actionable+Intelligence+📊" alt="Typing SVG" />
+  <br/><br/>
+
+  <!-- ========================================== -->
+  <!-- PHASE 4: SOCIAL BADGES (THEMED & TESTED)   -->
+  <!-- ========================================== -->
+  <a href="https://www.linkedin.com/in/batman2400/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://huggingface.co/batman2400">
+    <img src="https://img.shields.io/badge/Hugging%20Face-0A101F?style=for-the-badge&logo=huggingface&logoColor=FFA800&labelColor=0A101F" alt="Hugging Face" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://kaggle.com/batman2400">
+    <img src="https://img.shields.io/badge/Kaggle-0A101F?style=for-the-badge&logo=kaggle&logoColor=20BEFF&labelColor=0A101F" alt="Kaggle" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://twitter.com/your-handle">
+    <img src="https://img.shields.io/badge/X%20(Twitter)-0A101F?style=for-the-badge&logo=x&logoColor=22D3EE&labelColor=0A101F" alt="Twitter" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:mohan@example.com">
+    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
   </a>
 
-  <p align="center">
-    <b>Passionate about pushing the frontiers of Artificial Intelligence, Deep Learning, and Intelligent Automation.</b>
-  </p>
-
-  <!-- Social & Profile Badges -->
-  <p align="center">
-    <a href="mailto:your-email@example.com">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-    </a>
-    <a href="https://linkedin.com/in/your-linkedin">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="https://huggingface.co/batman2400">
-      <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-FFD21E?style=for-the-badge&logoColor=black" alt="Hugging Face" />
-    </a>
-    <a href="https://kaggle.com/batman2400">
-      <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle" />
-    </a>
-    <a href="https://twitter.com/your-handle">
-      <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-    </a>
-    <a href="https://yourportfolio.dev">
-      <img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-    </a>
-  </p>
-
 </div>
+
+<br/>
 
 ---
 
@@ -42,18 +44,15 @@
 
 ```yaml
 name: Mohan
+handle: batman2400
 role: AI / Machine Learning & Data Science Engineer
-location: Earth 🌍
-focus_areas:
-  - Generative AI & Large Language Models (LLMs)
-  - Deep Learning, Computer Vision & NLP
-  - Scalable MLOps & Real-Time Inference Pipelines
-  - High-Impact Predictive Modeling & Statistical Analytics
-passions:
-  - Designing autonomous AI agents with tool-calling capabilities
-  - Fine-tuning foundational models for domain-specific tasks
-  - Open Source contribution & knowledge sharing
-currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGML / TensorRT)
+domain_focus:
+  - Generative AI & Autonomous LLM Agents (RAG / Tool-Calling)
+  - Deep Learning, Computer Vision & Statistical Modeling
+  - Scalable MLOps Pipelines & Low-Latency Inference (TensorRT / ONNX)
+status: Building + Training + Shipping
+stack_core: [Python, PyTorch, Hugging Face, Scikit-Learn, Docker, FastAPI]
+mission: "Designing robust, production-grade intelligence from raw data."
 ```
 
 ---
@@ -71,7 +70,7 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 
-#### 📊 Data Science, Analytics & Modeling
+#### 📊 Data Science & Mathematical Modeling
 ![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
@@ -80,7 +79,7 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
 ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-CC292B?style=for-the-badge&logo=mysql&logoColor=white)
 
-#### ⚙️ MLOps, Cloud & Backend Engineering
+#### ⚙️ MLOps, Cloud & Infrastructure
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -91,16 +90,16 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
 
 #### 🗄️ Databases & Vector Stores
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6600?style=for-the-badge&logo=database&logoColor=white)
 ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=database&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 </div>
 
 ---
 
-### 🚀 Featured Projects
+### 🚀 Featured AI / ML Projects
 
 <table>
   <tr>
@@ -112,11 +111,11 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
         <img src="https://img.shields.io/badge/ChromaDB-FF6600?style=flat-square"/>
       </p>
       <p>
-        Autonomous multi-agent architecture featuring RAG retrieval, tool calling, recursive problem decomposition, and vector memory indexing for domain analysis.
+        Autonomous multi-agent system executing recursive reasoning, external tool-calling (web, code execution, SQL), and dense vector indexing.
       </p>
       <ul>
         <li>⚡ Dynamic context window optimization and latency reduction</li>
-        <li>🔍 Modular tool plugins (web search, code execution, SQL query)</li>
+        <li>🔍 Modular tool plugins with structured schema validation</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
@@ -130,11 +129,11 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
       </p>
       <p>
-        High-throughput deep learning inference pipeline for multi-class object detection, spatial tracking, and anomaly detection over live RTSP video streams.
+        High-throughput deep learning inference pipeline for multi-class object detection, spatial tracking, and anomaly detection over live video feeds.
       </p>
       <ul>
-        <li>🚀 GPU acceleration with TensorRT / ONNX Runtime</li>
-        <li>📦 Containerized microservice architecture ready for edge deployment</li>
+        <li>🚀 GPU acceleration using TensorRT / ONNX Runtime</li>
+        <li>📦 Production containerization for edge and cloud deployment</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
@@ -150,11 +149,11 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
         <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white"/>
       </p>
       <p>
-        Automated CI/CD machine learning lifecycle: data validation, drift monitoring, automated hyperparameter tuning, model registry, and containerized deployment.
+        Automated CI/CD machine learning lifecycle: data validation, drift detection, automated hyperparameter tuning, model registry, and containerized deployment.
       </p>
       <ul>
-        <li>📊 Continuous evaluation with automated performance reports</li>
-        <li>🔄 Zero-downtime canary deployment strategy</li>
+        <li>📊 Continuous evaluation with automated regression tests</li>
+        <li>🔄 Zero-downtime canary deployment pipeline</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
@@ -168,11 +167,11 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
         <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
       </p>
       <p>
-        Parameter-Efficient Fine-Tuning (PEFT) framework targeting open-source foundational models (Llama 3 / Mistral) for proprietary structured reasoning.
+        Parameter-Efficient Fine-Tuning (PEFT) framework targeting open-source foundational models for proprietary domain reasoning and instruction following.
       </p>
       <ul>
         <li>🎯 4-bit / 8-bit quantization with minimal perplexity degradation</li>
-        <li>🧪 Custom synthetic data generation and filtering pipeline</li>
+        <li>🧪 Synthetic dataset generation and loss curvature auditing</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
@@ -183,44 +182,44 @@ currently_learning: Advanced Multi-Agent Orchestration & Model Quantization (GGM
 
 ---
 
-### 📊 GitHub Analytics & Activity
+### 📊 GitHub Activity & Analytics
 
+<!-- ========================================== -->
+<!-- PHASE 2: STATS CARDS (THEMED PALETTE)      -->
+<!-- ========================================== -->
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=batman2400&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=60A5FA&text_color=94A3B8" alt="batman2400's GitHub Stats" width="100%" />
-      </td>
-      <td align="center" width="50%">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=batman2400&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F59E0B&currStreakLabel=38BDF8" alt="batman2400's GitHub Streak" width="100%" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=batman2400&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=94A3B8" alt="Top Languages" width="55%" />
-      </td>
-    </tr>
-  </table>
+
+  <!-- Streak Stats Card (100% width) -->
+  <img width="100%" src="https://streak-stats.demolab.com/?user=batman2400&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" alt="GitHub Streak" />
+
+  <br/><br/>
+
+  <!-- GitHub Stats & Top Languages side-by-side (49% width each) -->
+  <!-- Note: When you deploy your private Vercel instance, replace github-readme-stats.vercel.app with your-instance.vercel.app -->
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=batman2400&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="GitHub Stats" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batman2400&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Top Languages" />
+
 </div>
+
+<br/>
 
 ---
 
-### 🤝 Let's Connect & Collaborate!
+### 🐍 Contribution Graph
 
-I'm always open to discussing new AI research, collaborating on innovative open-source projects, or exploring exciting engineering opportunities.
+<!-- ========================================== -->
+<!-- PHASE 3: CONTRIBUTION SNAKE (<picture>)   -->
+<!-- ========================================== -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/output/github-snake.svg" />
+    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/batman2400/batman2400/output/github-snake.svg" />
+  </picture>
+</div>
 
-- 💬 Ask me about: **Deep Learning, LLMs, Computer Vision, MLOps, and scalable model deployment**
-- ⚡ Fun fact: *The human brain runs on ~20 watts of power—making it still the most energy-efficient neural network in the universe!*
+<br/>
 
 <div align="center">
-
-  <br/>
-
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=100&section=footer" width="100%" alt="Footer" />
-
-  <!-- Profile Visitor Counter -->
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=batman2400&label=PROFILE+VIEWS&color=0e75b6&style=flat-square" alt="Visitor Count" />
-  </p>
-
+  <img src="https://komarev.com/ghpvc/?username=batman2400&label=PROFILE+VIEWS&color=22D3EE&style=flat-square" alt="Profile Views" />
 </div>
