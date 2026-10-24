@@ -163,7 +163,7 @@ def generate_banner(output_path, dark_mode=True, photo_path=None):
         ("Core.Data", "scikit-learn · Pandas · NumPy · RAG"),
         ("Core.Web", "Next.js · React · Vite · Tailwind CSS"),
         ("Core.DB", "Supabase (Postgres) · Pinecone · SQLite"),
-        ("Honours", "KDU Chess Colours · FIDE ID: 9923489"),
+        ("Platform", "Xyrex · Scalable AI Systems & Engineering"),
         ("Grid.Mail", "mohanuvaram123@gmail.com"),
         ("Grid.LinkedIn", "uvaram-mohanaram-aa20932b1"),
         ("Grid.GitHub", "github.com/batman2400"),

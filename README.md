@@ -4,15 +4,15 @@
   <!-- PHASE 1: TERMINAL BANNER (<picture> THEMED) -->
   <!-- ========================================== -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/light.svg?v=2">
-    <img alt="Uvaram Mohanaram - AI / ML & Software Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg?v=2" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg?v=3">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/light.svg?v=3">
+    <img alt="Uvaram Mohanaram - AI / ML & Software Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg?v=3" width="100%">
   </picture>
 
   <br/><br/>
 
   <!-- ========================================== -->
-  <!-- PHASE 4: SOCIAL BADGES (THEMED & TESTED)   -->
+  <!-- VERIFIED CONTACT & SOCIAL BADGES           -->
   <!-- ========================================== -->
   <a href="https://www.linkedin.com/in/uvaram-mohanaram-aa20932b1/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -22,16 +22,12 @@
     <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://huggingface.co/batman2400">
-    <img src="https://img.shields.io/badge/Hugging%20Face-0A101F?style=for-the-badge&logo=huggingface&logoColor=FFA800&labelColor=0A101F" alt="Hugging Face" />
+  <a href="https://github.com/batman2400/My-webportfolio">
+    <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=googlechrome&logoColor=22D3EE&labelColor=0A101F" alt="Portfolio" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://kaggle.com/batman2400">
-    <img src="https://img.shields.io/badge/Kaggle-0A101F?style=for-the-badge&logo=kaggle&logoColor=20BEFF&labelColor=0A101F" alt="Kaggle" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://ratings.fide.com/profile/9923489">
-    <img src="https://img.shields.io/badge/FIDE%20Chess-0A101F?style=for-the-badge&logo=lichess&logoColor=22D3EE&labelColor=0A101F" alt="FIDE Chess" />
+  <a href="https://github.com/batman2400?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-0A101F?style=for-the-badge&logo=github&logoColor=A78BFA&labelColor=0A101F" alt="Repositories" />
   </a>
 
 </div>
@@ -49,13 +45,13 @@ role: Software Engineer & AI / Machine Learning Engineer
 education: BSc (Hons) Software Engineering — KDU (Faculty of Computing)
 location: Colombo, Sri Lanka 🇱🇰
 domain_focus:
-  - Multilingual Transformer Encoders (int8 ONNX) & PyTorch Neural Architectures
+  - Multilingual Transformer Encoders (int8 ONNX) & PyTorch Neural Networks
   - Low-Latency Asynchronous FastAPI Inference Pipelines & Microservices
-  - Production Full-Stack Applications (Next.js App Router, Supabase, Tailwind)
-  - Cloud MLOps & CI/CD Delivery (Docker, Azure VMs, Caddy HTTPS, GitHub Actions)
-leadership:
+  - Production Full-Stack Web Applications (Next.js App Router, Supabase, Tailwind)
+  - Cloud MLOps & Continuous Delivery (Docker, Azure VMs, Caddy HTTPS, GitHub Actions)
+initiatives:
+  - Founder & Lead Developer @ Xyrex (Scalable AI Systems & Engineering Platform)
   - Team Leader @ Team Fade (IEEE CS KDU TensorForge 2.0 AI/MLOps Buildathon)
-  - KDU University Chess Colours Awardee (2025) & International FIDE-Rated Player (ID: 9923489)
 status: Building + Training + Shipping
 ```
 
@@ -98,7 +94,7 @@ status: Building + Training + Shipping
 
 ---
 
-### 🚀 Engineering & AI Project Highlights
+### 🚀 Featured Engineering & AI Projects
 
 <table>
   <tr>
@@ -115,15 +111,15 @@ status: Building + Training + Shipping
         Offline-capable multilingual ticket classification service across English, Sinhala, Tamil, Singlish, and Tanglish (11 primary categories, urgency, and human-review thresholding across 4,800 tickets).
       </p>
       <ul>
-        <li>⚡ Fused word/character TF-IDF Linear SVM with fine-tuned <code>multilingual-e5-small</code> quantized to int8 ONNX (macro-F1 from 0.6558 to 0.8022, urgency F1 0.9080).</li>
+        <li>⚡ Fused word/character TF-IDF Linear SVM with fine-tuned <code>multilingual-e5-small</code> quantized to int8 ONNX (macro-F1: 0.8022, urgency F1: 0.9080).</li>
         <li>🚀 Async FastAPI + SQLite batch worker handling single predictions at p95 35ms with 256/256 CI contract checks.</li>
       </ul>
       <p align="center">
-        <a href="https://github.com/batman2400"><b>View Repository »</b></a>
+        <a href="https://github.com/batman2400/Tensor-forge"><b>View Repository »</b></a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🚌 Dynamic Public Transport Fleet Optimizer</h3>
+      <h3 align="center">🚌 Transit Optimizer Bus</h3>
       <p align="center">
         <b>Route 100 Passenger Demand Forecasting & Dispatch</b><br/>
         <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
@@ -138,28 +134,28 @@ status: Building + Training + Shipping
         <li>🔄 Dynamic bus headway allocation service across rush-hour, off-peak, and holiday overrides.</li>
       </ul>
       <p align="center">
-        <a href="https://github.com/batman2400"><b>View Repository »</b></a>
+        <a href="https://github.com/batman2400/Transit-Optimizer-Bus"><b>View Repository »</b></a>
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🚗 DropMe — Corridor Micro-Transit</h3>
+      <h3 align="center">⚡ Xyrex AI Engineering Platform</h3>
       <p align="center">
-        <b>Decentralized Campus & Urban Shuttle Platform</b><br/>
-        <img src="https://img.shields.io/badge/React_PWA-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square"/>
+        <b>Full-Stack AI Engineering & Scalable Automation</b><br/>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
       </p>
       <p>
-        Corridor-based commuter micro-transit Progressive Web App with ACID seat-locking and sub-second WebSocket synchronization converting empty car seats into scheduled shuttles.
+        Full-stack AI engineering platform focused on building scalable automation systems, custom intelligent software, and enterprise-grade AI microservices.
       </p>
       <ul>
-        <li>🗺️ Deterministic funnel-topology route matching engine guaranteeing zero drop-off detour.</li>
-        <li>🌱 Tripled average vehicle occupancy (1.2 → 3.5+ riders) and reduced per-capita emissions by 55–65%.</li>
+        <li>🤖 Custom agentic tool-calling workflows and multi-modal integration.</li>
+        <li>🛡️ Production-ready architecture designed for rapid business deployment.</li>
       </ul>
       <p align="center">
-        <a href="https://github.com/batman2400"><b>View Repository »</b></a>
+        <a href="https://github.com/batman2400/Xyrex"><b>View Repository »</b></a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -169,7 +165,7 @@ status: Building + Training + Shipping
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
         <img src="https://img.shields.io/badge/Pinecone-000000?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
       </p>
       <p>
         Full-stack enterprise e-commerce platform for architectural materials powered by Next.js Server Actions, Supabase PostgreSQL, Pinecone visual vector tile matching, and Stripe checkout.
@@ -179,7 +175,7 @@ status: Building + Training + Shipping
         <li>⚡ End-to-end Vercel CI/CD pipeline integrated with Jira-tracked agile sprints.</li>
       </ul>
       <p align="center">
-        <a href="https://github.com/batman2400"><b>View Repository »</b></a>
+        <a href="https://github.com/batman2400/UN-Tiles"><b>View Repository »</b></a>
       </p>
     </td>
   </tr>
@@ -189,9 +185,6 @@ status: Building + Training + Shipping
 
 ### 📊 GitHub Activity & Analytics
 
-<!-- ========================================== -->
-<!-- PHASE 2: STATS CARDS (THEMED PALETTE)      -->
-<!-- ========================================== -->
 <div align="center">
 
   <!-- Streak Stats Card (100% width) -->
@@ -200,27 +193,9 @@ status: Building + Training + Shipping
   <br/><br/>
 
   <!-- GitHub Stats & Top Languages side-by-side (49% width each) -->
-  <!-- Note: When you deploy your private Vercel instance, replace github-readme-stats.vercel.app with your-instance.vercel.app -->
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=batman2400&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="GitHub Stats" />
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batman2400&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Top Languages" />
 
-</div>
-
-<br/>
-
----
-
-### 🐍 Contribution Graph
-
-<!-- ========================================== -->
-<!-- PHASE 3: CONTRIBUTION SNAKE (<picture>)   -->
-<!-- ========================================== -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/output/github-snake.svg" />
-    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/batman2400/batman2400/output/github-snake.svg" />
-  </picture>
 </div>
 
 <br/>
