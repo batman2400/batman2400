@@ -6,7 +6,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batman2400/batman2400/main/light.svg">
-    <img alt="Mohan - AI & ML Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg" width="100%">
+    <img alt="Uvaram Mohanaram - AI / ML & Software Engineer" src="https://raw.githubusercontent.com/batman2400/batman2400/main/dark.svg" width="100%">
   </picture>
 
   <br/><br/>
@@ -14,8 +14,12 @@
   <!-- ========================================== -->
   <!-- PHASE 4: SOCIAL BADGES (THEMED & TESTED)   -->
   <!-- ========================================== -->
-  <a href="https://www.linkedin.com/in/batman2400/">
+  <a href="https://www.linkedin.com/in/uvaram-mohanaram-aa20932b1/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:mohanuvaram123@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
   </a>
   &nbsp;&nbsp;
   <a href="https://huggingface.co/batman2400">
@@ -26,12 +30,8 @@
     <img src="https://img.shields.io/badge/Kaggle-0A101F?style=for-the-badge&logo=kaggle&logoColor=20BEFF&labelColor=0A101F" alt="Kaggle" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://twitter.com/your-handle">
-    <img src="https://img.shields.io/badge/X%20(Twitter)-0A101F?style=for-the-badge&logo=x&logoColor=22D3EE&labelColor=0A101F" alt="Twitter" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:mohan@example.com">
-    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
+  <a href="https://ratings.fide.com/profile/9923489">
+    <img src="https://img.shields.io/badge/FIDE%20Chess-0A101F?style=for-the-badge&logo=lichess&logoColor=22D3EE&labelColor=0A101F" alt="FIDE Chess" />
   </a>
 
 </div>
@@ -43,16 +43,20 @@
 ### 💫 About Me
 
 ```yaml
-name: Mohan
+name: Uvaram Mohanaram
 handle: batman2400
-role: AI / Machine Learning & Data Science Engineer
+role: Software Engineer & AI / Machine Learning Engineer
+education: BSc (Hons) Software Engineering — KDU (Faculty of Computing)
+location: Colombo, Sri Lanka 🇱🇰
 domain_focus:
-  - Generative AI & Autonomous LLM Agents (RAG / Tool-Calling)
-  - Deep Learning, Computer Vision & Statistical Modeling
-  - Scalable MLOps Pipelines & Low-Latency Inference (TensorRT / ONNX)
+  - Multilingual Transformer Encoders (int8 ONNX) & PyTorch Neural Architectures
+  - Low-Latency Asynchronous FastAPI Inference Pipelines & Microservices
+  - Production Full-Stack Applications (Next.js App Router, Supabase, Tailwind)
+  - Cloud MLOps & CI/CD Delivery (Docker, Azure VMs, Caddy HTTPS, GitHub Actions)
+leadership:
+  - Team Leader @ Team Fade (IEEE CS KDU TensorForge 2.0 AI/MLOps Buildathon)
+  - KDU University Chess Colours Awardee (2025) & International FIDE-Rated Player (ID: 9923489)
 status: Building + Training + Shipping
-stack_core: [Python, PyTorch, Hugging Face, Scikit-Learn, Docker, FastAPI]
-mission: "Designing robust, production-grade intelligence from raw data."
 ```
 
 ---
@@ -61,79 +65,77 @@ mission: "Designing robust, production-grade intelligence from raw data."
 
 <div align="center">
 
-#### 🧠 Artificial Intelligence & Deep Learning
+#### 🧠 Artificial Intelligence, Deep Learning & Vector Search
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Transformers-FFA800?style=for-the-badge&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-
-#### 📊 Data Science & Mathematical Modeling
+![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC292B?style=for-the-badge&logo=mysql&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=database&logoColor=white)
 
-#### ⚙️ MLOps, Cloud & Infrastructure
+#### 💻 Full-Stack Web Development & Frameworks
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+
+#### ⚙️ MLOps, Cloud, Infrastructure & Databases
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
-![Weights & Biases](https://img.shields.io/badge/W%26B-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black)
-
-#### 🗄️ Databases & Vector Stores
+![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6600?style=for-the-badge&logo=database&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=database&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
 
 ---
 
-### 🚀 Featured AI / ML Projects
+### 🚀 Engineering & AI Project Highlights
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🤖 Multi-Agent LLM Orchestrator</h3>
+      <h3 align="center">🏆 TensorForge 2.0 (Phase 2 MVP)</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+        <b>Multilingual Support Ticket Classification & Routing</b><br/>
+        <img src="https://img.shields.io/badge/Hugging_Face-FFA800?style=flat-square"/>
+        <img src="https://img.shields.io/badge/ONNX_Int8-005CED?style=flat-square"/>
         <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-        <img src="https://img.shields.io/badge/ChromaDB-FF6600?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Azure_VM-0078D4?style=flat-square"/>
       </p>
       <p>
-        Autonomous multi-agent system executing recursive reasoning, external tool-calling (web, code execution, SQL), and dense vector indexing.
+        Offline-capable multilingual ticket classification service across English, Sinhala, Tamil, Singlish, and Tanglish (11 primary categories, urgency, and human-review thresholding across 4,800 tickets).
       </p>
       <ul>
-        <li>⚡ Dynamic context window optimization and latency reduction</li>
-        <li>🔍 Modular tool plugins with structured schema validation</li>
+        <li>⚡ Fused word/character TF-IDF Linear SVM with fine-tuned <code>multilingual-e5-small</code> quantized to int8 ONNX (macro-F1 from 0.6558 to 0.8022, urgency F1 0.9080).</li>
+        <li>🚀 Async FastAPI + SQLite batch worker handling single predictions at p95 35ms with 256/256 CI contract checks.</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">👁️ Real-Time Vision Analytics Engine</h3>
+      <h3 align="center">🚌 Dynamic Public Transport Fleet Optimizer</h3>
       <p align="center">
+        <b>Route 100 Passenger Demand Forecasting & Dispatch</b><br/>
         <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
       </p>
       <p>
-        High-throughput deep learning inference pipeline for multi-class object detection, spatial tracking, and anomaly detection over live video feeds.
+        4-layer PyTorch neural network (<code>DemandPredictorMLP: 23 → 128 → 64 → 32 → 1</code>) trained with BatchNorm, Dropout, and Huber Loss to forecast passenger load across 8 Galle Road bus stops.
       </p>
       <ul>
-        <li>🚀 GPU acceleration using TensorRT / ONNX Runtime</li>
-        <li>📦 Production containerization for edge and cloud deployment</li>
+        <li>📊 Leak-proof ColumnTransformer pipeline on 800,000 records (158,622 holdout rows; MAE 225.8).</li>
+        <li>🔄 Dynamic bus headway allocation service across rush-hour, off-peak, and holiday overrides.</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
@@ -142,36 +144,39 @@ mission: "Designing robust, production-grade intelligence from raw data."
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">📈 End-to-End MLOps Predictive Pipeline</h3>
+      <h3 align="center">🚗 DropMe — Corridor Micro-Transit</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white"/>
-        <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white"/>
+        <b>Decentralized Campus & Urban Shuttle Platform</b><br/>
+        <img src="https://img.shields.io/badge/React_PWA-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square"/>
       </p>
       <p>
-        Automated CI/CD machine learning lifecycle: data validation, drift detection, automated hyperparameter tuning, model registry, and containerized deployment.
+        Corridor-based commuter micro-transit Progressive Web App with ACID seat-locking and sub-second WebSocket synchronization converting empty car seats into scheduled shuttles.
       </p>
       <ul>
-        <li>📊 Continuous evaluation with automated regression tests</li>
-        <li>🔄 Zero-downtime canary deployment pipeline</li>
+        <li>🗺️ Deterministic funnel-topology route matching engine guaranteeing zero drop-off detour.</li>
+        <li>🌱 Tripled average vehicle occupancy (1.2 → 3.5+ riders) and reduced per-capita emissions by 55–65%.</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🔬 Domain-Specific LLM Fine-Tuner</h3>
+      <h3 align="center">🏬 UN Tiles — Intelligent E-Commerce</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/Hugging_Face-FFA800?style=flat-square"/>
-        <img src="https://img.shields.io/badge/LoRA%20%2F%20QLoRA-3776AB?style=flat-square"/>
-        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+        <b>Real-Time Inventory & Vector Search Platform</b><br/>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Pinecone-000000?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square"/>
       </p>
       <p>
-        Parameter-Efficient Fine-Tuning (PEFT) framework targeting open-source foundational models for proprietary domain reasoning and instruction following.
+        Full-stack enterprise e-commerce platform for architectural materials powered by Next.js Server Actions, Supabase PostgreSQL, Pinecone visual vector tile matching, and Stripe checkout.
       </p>
       <ul>
-        <li>🎯 4-bit / 8-bit quantization with minimal perplexity degradation</li>
-        <li>🧪 Synthetic dataset generation and loss curvature auditing</li>
+        <li>📐 Interactive tile wastage margin calculator (10–15%) and automated low-stock triggers.</li>
+        <li>⚡ End-to-end Vercel CI/CD pipeline integrated with Jira-tracked agile sprints.</li>
       </ul>
       <p align="center">
         <a href="https://github.com/batman2400"><b>View Repository »</b></a>

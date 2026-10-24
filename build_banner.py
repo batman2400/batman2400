@@ -174,25 +174,25 @@ def generate_banner(output_path, dark_mode=True, photo_path=None):
     bits = process_portrait(photo_path, grid_w=280, grid_h=340, dark_mode=dark_mode)
     path_d = bits_to_svg_paths(bits, origin_x=70, origin_y=140, scale_x=1.28, scale_y=1.22)
 
-    # Info panel rows (System.Info)
+    # Real info panel rows from Uvaram Mohanaram's CV
     info_rows = [
-        ("Subject", "Mohan"),
-        ("Role", "AI / Machine Learning & Data Science Engineer"),
-        ("Origin", "India"),
-        ("Education", "B.Tech / CS & Data Engineering"),
+        ("Subject", "Uvaram Mohanaram"),
+        ("Role", "AI / ML & Software Engineer"),
+        ("Origin", "Colombo, Sri Lanka"),
+        ("Education", "BSc (Hons) Software Eng · KDU"),
         ("Status", "Building + Training + Shipping"),
-        ("ToolChain", "VS Code · Git · Docker · Linux · CUDA"),
-        ("Core.Lang", "Python · C++ · SQL · Bash"),
-        ("Core.DeepLearning", "PyTorch · TensorFlow · Keras · JAX"),
-        ("Core.GenAI", "Transformers · LangChain · LlamaIndex · RAG"),
-        ("Core.DataScience", "Scikit-Learn · Pandas · NumPy · SciPy"),
-        ("Core.MLOps", "MLflow · W&B · FastAPI · CI/CD Actions"),
-        ("Core.VectorDB", "ChromaDB · Pinecone · PostgreSQL · Redis"),
-        ("Grid.Mail", "mohan@example.com"),
-        ("Grid.LinkedIn", "linkedin.com/in/batman2400"),
-        ("Grid.HuggingFace", "huggingface.co/batman2400"),
-        ("Grid.Kaggle", "kaggle.com/batman2400"),
-        ("Grid.Portfolio", "batman2400.github.io"),
+        ("ToolChain", "VS Code · Git · Docker · Azure · Linux"),
+        ("Core.Lang", "Python · TypeScript · JavaScript · SQL"),
+        ("Core.AI", "PyTorch · Hugging Face · ONNX Runtime"),
+        ("Core.MLOps", "FastAPI · Docker · Azure · GitHub CI/CD"),
+        ("Core.Data", "scikit-learn · Pandas · NumPy · RAG"),
+        ("Core.Web", "Next.js · React · Vite · Tailwind CSS"),
+        ("Core.DB", "Supabase (Postgres) · Pinecone · SQLite"),
+        ("Honours", "KDU Chess Colours · FIDE ID: 9923489"),
+        ("Grid.Mail", "mohanuvaram123@gmail.com"),
+        ("Grid.LinkedIn", "uvaram-mohanaram-aa20932b1"),
+        ("Grid.GitHub", "github.com/batman2400"),
+        ("Grid.Lead", "Team Leader · Team Fade (TensorForge 2.0)"),
     ]
 
     # Generate SVGs
